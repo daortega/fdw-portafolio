@@ -35,6 +35,9 @@ $(function () {
   }; //fin typeform
 
   //activar tooltip
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $('body').scrollspy({ target: '#navbarNav' })
+
 
 });
