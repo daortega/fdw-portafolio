@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Medula+One|Source+Sans+Pro:400,400i,700|Oleo+Script&display=swap');
 
-* {
+a {
   transition: all .5s;
 }
 
@@ -97,3 +97,17 @@ header {
   width: 100%;
   height: 80vh;
 }
+
+@media (max-width: 760px){
+
+  header::before {
+    background-size: cover;
+  }
+
+  .header__title {
+    font-size: 3em;
+  }
+
+  #about > h2 {
+    font-size: 1.5em;
+  }
