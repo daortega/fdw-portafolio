@@ -1,8 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Medula+One|Source+Sans+Pro:400,400i,700|Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Medula+One|Source+Sans+Pro:400,400i,700|Oleo+Script&display=swap');
+
+* {
+  transition: all .5s;
+}
 
 .medula-one {
-  font-family: 'Medula One', cursive;
-  /*font-family: 'Unica One', cursive;*/
+  font-family: 'Oleo Script', cursive;
+  font-size: 24px;
+  margin: 0;
+}
+
+.bg-daortega {
+  background-color: #38434f;
+}
+
+.color-daortega {
+  color: #38434f;
+  /*color: rgb(50, 208, 184);*/
 }
 
 h2, p {
@@ -21,35 +35,37 @@ header::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   /*background-color: #ccc;*/
   background-image: url('../img/miyo2.jpg');
-  background-size: 90% auto;
+  background-size: 70% auto;
   background-position: left;
   background-repeat: no-repeat;
-  filter: grayscale(90%) blur(0.1px);
+  filter: grayscale(70%) blur(0.1px);
 }
 
 header {
   padding-top: 40vh;
-  height: 60vh;
-  background-color: rgba(50, 208, 184, .35);
+  height: 70vh;
+  background: linear-gradient(to right, rgba(42, 52, 48, 0.08), rgba(28, 42, 46, 0.7) 30%, rgba(35, 44, 53, 0.8) 100%);
 }
 
 .header__title {
-  font-size: 4em;
-  font-family: 'Unica One', cursive;
+  font-size: 5em;
+  font-family: 'Oleo Script', cursive;
 }
 
 .header__title > span {
   display: block;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: .7em;
+  font-size: .5em;
   line-height: .8em;
 }
 
-.bg-daortega {
-  background-color: rgb(50, 208, 184);
+#experience .row p {
+  margin-bottom: 5px;
+  position: relative;
+  opacity: .8;
 }
 
 .experiencie-img--logo {
@@ -60,4 +76,24 @@ header {
   max-height: 90%;
   max-width: 100%;
   width: auto;
+}
+
+.experiencie-title > span {
+  display: block;
+  font-size: .8em;
+}
+
+.fab {
+  font-size: 2em;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.fab:hover {
+  opacity: .8;
+}
+
+.typeform-widget {
+  width: 100%;
+  height: 80vh;
 }

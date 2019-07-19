@@ -19,7 +19,7 @@
 
 <body>
 
-  <nav class="navbar bg-daortega navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar bg-daortega navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <h1 class="medula-one">Denisse Ortega</h1>
@@ -31,26 +31,22 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Sobre mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#works">Trabajos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contáctame</a>
-          </li>
+            <a class="nav-item nav-link" href="#about">Sobre mi</a>
+
+            <a class="nav-item nav-link" href="#experience">Experiencia</a>
+
+            <a class="nav-item nav-link" href="#works">Proyectos</a>
+
+            <a class="nav-item nav-link" href="#contact">Contáctame</a>
+
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="text-right mb-4">
+  <header class="text-right mb-4 text-white">
     <div class="container">
-      <h2 class="header__title">DENISSE ORTEGA <span>Diseñadora front-end</span></h2>
+      <h2 class="header__title">Denisse Ortega <span>Diseñadora front-end</span></h2>
     </div>
   </header>
 
@@ -70,24 +66,26 @@
     </div>
   </section>
 
-  <section id="experience" class="container py-4 text-center">
-    <h2 class="">Experiencia</h2>
-    <div class="row">
-      <div class="col-xs-12 col-md-3">
-        <figure class="experiencie-img--logo">
-          <img src="assets/img/logos/logo-datacampfire.png" alt="">
-        </figure>
-        <h3>Diseñadora Front-end <span>Freelance</span></h3>
-        <p>Data Campfire</p>
-        <p>2018 - 2019</p>
-      </div>
+  <section id="experience" class="container my-4 py-4 text-center">
+    <h2 class="my-3">Experiencia</h2>
+
+    <div class="row my-4 experience-img">
 
       <div class="col-xs-12 col-md-3">
         <figure class="experiencie-img--logo">
           <img src="assets/img/logos/logo-ocuc.svg" alt="">
         </figure>
-        <h3>Front-end <span>Freelance</span></h3>
+        <h3 class="experiencie-title">Desarrolladora front-end <span class="color-daortega">Freelance</span></h3>
         <p>Observatorio Ciudades UC</p>
+        <p>2018 - 2019</p>
+      </div>
+
+      <div class="col-xs-12 col-md-3">
+        <figure class="experiencie-img--logo">
+          <img src="assets/img/logos/logo-datacampfire.png" alt="">
+        </figure>
+        <h3 class="experiencie-title">Diseñadora front-end <span class="color-daortega">Freelance</span></h3>
+        <p>Data Campfire</p>
         <p>2018 - 2019</p>
       </div>
 
@@ -95,7 +93,7 @@
         <figure class="experiencie-img--logo">
           <img src="assets/img/logos/logo-cybercenter.jpg" alt="">
         </figure>
-        <h3>Diseñadora front-end <span>Full-time</span></h3>
+        <h3 class="experiencie-title">Diseñadora front-end <span class="color-daortega">Full-time</span></h3>
         <p>Cybercenter</p>
         <p>2019</p>
       </div>
@@ -104,107 +102,139 @@
         <figure class="experiencie-img--logo">
           <img src="assets/img/logos/logo-uc.jpg" alt="">
         </figure>
-        <h3>Coordinadora <span>Part-time</span> </h3>
-        <h5>Diplomado en Visualización de Datos </h5>
-        <p>Pontificia Universidad Católica de Chile</p>
+        <h3 class="experiencie-title">Coordinadora Curricular<span class="color-daortega">Part-time</span> </h3>
+        <p>Diplomado en Visualización de Datos </p>
         <p>2019</p>
       </div>
 
     </div>
+
+    <button class="btn btn-info mt-4" type="button" data-toggle="collapse" data-target="#collapseExp" aria-expanded="false" aria-controls="collapseExp">
+      Leer más sobre mi experiencia
+    </button>
+
+    <div class="collapse" id="collapseExp">
+      <div class="card card-body">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <h3>Académica</h3>
+            <p class="text-left">He sido ayudante en cursos de pregrado en diseño de la UC, destacando entre ellas "Programación Creativa para Diseño" y "Diseño y Nuevos Medios", junto con cursos de posgrado como "Bigdata para la toma de Decisiones" (de Clase Ejecutiva UC) y Diplomado en Visualización de Datos</p>
+
+            <p class="text-left">Fuera de la UC también he participado como ayudante en Desafío Latam, principalmente en el curso de Fundamentos de Desarrollo Web (FDW). Realizando el módulo de FDW he trabajado con 5 generaciones de alumnos entre Full-stack y Front-end.</p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <h3>Profesional</h3>
+            <p class="text-left">Mis trabajos han sido relacionados a la visualización de datos, proyectos educativos tecnológicos, con agencias de marketing digital y data science.</p>
+            <p class="text-left">Los equipos de trabajo en que he participado han sido variados: literatos, publicistas, analistas SIG, ingenieros en computación, diseñadores gráficos y UX, geógrafos, urbanistas, programadores full-stack, back-end, entre otros.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section id="works">
-    <div class="container">
-      <h2>Mis proyectos</h2>
+    <div class="container pt-4">
+      <h2 class="text-center my-4">Mis proyectos</h2>
 
       <div class="row">
 
         <!-- Proyecto SIEDU -->
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 mb-3">
           <div class="card">
             <img class="img-fluid" src="assets/img/proyectos/siedu01.png" alt="...">
             <div class="card-body">
               <h5 class="card-title">SIEDU</h5>
               <p class="card-p">Sistema de Indicadores y Estándares del Desarrollo Urbano</p>
-              <small>#visualización</small>
+              <small class="badge badge-pill badge-light">#visualización</small>
+              <small class="badge badge-pill badge-light">#D3js</small>
+              <small class="badge badge-pill badge-light">#front-end</small>
             </div>
             <div class="card-footer">
-              <a class="btn btn-info" target="_blank" href="concienciaurbana.cl">Ver más</a>
+              <a class="btn btn-info" target="_blank" href="http://siedu.ine.cl">Ir al sitio</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto CU -->
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 mb-3">
           <div class="card">
             <img class="img-fluid" src="assets/img/proyectos/cu01.png" alt="...">
             <div class="card-body">
               <h5 class="card-title">Conciencia Urbana</h5>
               <p class="card-p">Proyecto Explora CONICYT de Valoración y Divulgación de la Ciencia y la Tecnología.</p>
-              <small>#visualización</small>
+              <small class="badge badge-pill badge-light">#visualización</small>
+              <small class="badge badge-pill badge-light">#front-end</small>
+              <small class="badge badge-pill badge-light">#RoR</small>
             </div>
             <div class="card-footer">
-              <a class="btn btn-info" target="_blank" href="concienciaurbana.cl">Ver más</a>
+              <a class="btn btn-info" target="_blank" href="http://www.concienciaurbana.com">Ir al sitio</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto Postdata -->
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 mb-3">
           <div class="card">
             <img class="img-fluid" src="assets/img/proyectos/postdata01.png" alt="...">
             <div class="card-body">
               <h5 class="card-title">Postdata, Data Science Group</h5>
-              <p class="card-p">Landing page para equipo Postdata</p>
-              <small>#diseño #front-end</small>
+              <p class="card-p">Proyecto de diseño y desarrollo de landing page para Postdata</p>
+              <small class="badge badge-pill badge-light">#diseño</small>
+              <small class="badge badge-pill badge-light">#front-end</small>
             </div>
             <div class="card-footer">
-              <a class="btn btn-info" target="_blank" href="#">Ver más</a>
+              <a class="btn btn-info" target="_blank" href="http://www.postdata.cl">Ir al sitio</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto Mapoteca -->
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 mb-3">
           <div class="card">
             <img class="img-fluid" src="assets/img/proyectos/mapoteca01.png" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Mapoteca, Data Science Group</h5>
-              <p class="card-p">Landing page para equipo Mapoteca</p>
-              <small>#diseño #front-end</small>
+              <h5 class="card-title">Mapoteca, Geospatial Technologies</h5>
+              <p class="card-p">Proyecto de diseño y desarrollo de landing page para Mapoteca</p>
+              <small class="badge badge-pill badge-light">#diseño</small>
+              <small class="badge badge-pill badge-light">#front-end</small>
             </div>
             <div class="card-footer">
-              <a class="btn btn-info" target="_blank" href="#">Ver más</a>
+              <a class="btn btn-info" target="_blank" href="https://mapoteca.co">Ir al sitio</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto Guemil -->
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 mb-3">
           <div class="card">
             <img class="img-fluid" src="assets/img/proyectos/guemil01.png" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Guemil Project: Icons for emergency</h5>
+              <h5 class="card-title">Guemil Project: icons for emergency</h5>
               <p class="card-p">Visualización de resultados sobre el desempeño en test de significados</p>
-              <small>#diseño #visualizacion</small>
+              <small class="badge badge-pill badge-light">#diseño</small>
+              <small class="badge badge-pill badge-light">#visualizacion</small>
+              <small class="badge badge-pill badge-light">#D3js</small>
             </div>
             <div class="card-footer">
-              <a class="btn btn-info" target="_blank" href="#">Ver más</a>
+              <a class="btn btn-info" target="_blank" href="http://test.guemil.info">Ir al sitio</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto Johnson -->
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 mb-3">
           <div class="card">
             <img class="img-fluid" src="assets/img/proyectos/johnson01.png" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Johnson e-commerce</h5>
-              <p class="card-p">Práctica: front-end primera versión e-commerce de johnson.cl</p>
-              <small>#diseño #front-end</small>
+              <h5 class="card-title">Práctica Cencosud: Johnson e-commerce</h5>
+              <p class="card-p">Primera versión e-commerce de johnson.cl (2018)</p>
+              <small class="badge badge-pill badge-light">#diseño</small>
+              <small class="badge badge-pill badge-light">#front-end</small>
+              <small class="badge badge-pill badge-light">#practica</small>
             </div>
             <div class="card-footer">
-              <a class="btn btn-info" target="_blank" href="#">Ver más</a>
+              <a class="btn btn-info" target="_blank" href="https://denortega.github.io/home2/">Ver maqueta</a>
             </div>
           </div>
         </div>
@@ -214,10 +244,10 @@
   </section>
 
   <section id="contact">
-    <div class="typeform-widget" data-url="https://denisseortega1.typeform.com/to/Uyi7WQ" style="width: 100%; height: 500px;"></div>
+    <div class="typeform-widget" data-url="https://denisseortega1.typeform.com/to/Uyi7WQ"></div>
   </section>
 
-  <footer class="bg-daortega p-4">
+  <footer class="bg-daortega p-4 text-white">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6">
@@ -225,11 +255,10 @@
         </div>
 
         <div class="col-xs-12 col-md-6 text-right">
-          <a href="#">Instagram</a>
-          <a href="#">Linkedin</a>
-          <a href="#">Github</a>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
+          <a target="_blank" href="https://www.linkedin.com/in/daortegav/"><i class="fab fa-linkedin"></i></a>
+          <a target="_blank" href="https://github.com/daortega"><i class="fab fa-github-square"></i></a>
+          <a target="_blank" href="https://www.facebook.com/daortegav"><i class="fab fa-facebook-square"></i></a>
+          <a data-toggle="tooltip" data-placement="top" title="Ups! no tengo Twitter :(" href="#"><i class="fab fa-twitter-square"></i></a>
         </div>
       </div>
     </div>
